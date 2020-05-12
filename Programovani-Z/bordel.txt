@@ -1,0 +1,159 @@
+﻿ /*
+            while (true)
+            {
+                Console.Write("Zadej první číslo: ");
+                string numA = Console.ReadLine();
+                Console.Write("Zadej druhé číslo: ");
+                string numB = Console.ReadLine();
+
+                Console.WriteLine();
+
+                float a = float.Parse(numA);
+                float b = float.Parse(numB);
+
+                Console.Write("Součet: ");
+                Console.WriteLine(a + b);
+
+                Console.Write("Rozdíl: ");
+                Console.WriteLine(a - b);
+
+                Console.Write("Součin: ");
+                Console.WriteLine(a * b);
+
+                Console.Write("Podíl:  ");
+
+                if (b != 0)
+                {
+                    Console.WriteLine(a / b);
+                }
+                else
+                {
+                    Console.WriteLine("NULOU DĚLIT NELZE");
+                }
+                
+
+                Console.ReadKey();
+                Console.Clear();
+            }
+            */
+
+            /*int[] pole;
+            pole = new int[] { 1, 2, 3, 4, 5, 100, 1, 200 };
+            //pole = new int[100];
+            int delka = pole.Length;
+            int cislo = pole[8];*/
+
+
+            /*
+            Console.WriteLine("Tento program spočítá průměr známek.");
+            Console.Write("Kolik jich máš? ");
+            string pocet = Console.ReadLine();
+            int count = int.Parse(pocet);
+            int[] znamky = new int[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.Write($"Zadej {i + 1}. známku z {pocet}: ");
+                string znamka = Console.ReadLine();
+                int zn = int.Parse(znamka);
+                znamky[i] = zn;
+            }
+
+            double prumer = znamky.Average();
+            Console.WriteLine($"Průměr známek je: {prumer}");
+
+            if (znamky.Contains(5))
+            {
+                Console.WriteLine("Jsi flákač!");
+            }
+
+            Console.ReadKey();
+            */
+            /*
+            Console.WriteLine("Napiš větu:");
+            string veta = Console.ReadLine().ToLower();
+
+            string samohlasky = "aeiouyáéěíóúůý";
+            string souhlasky = "bcčdďfghjklmnpqrřsštťvwxzž";
+
+            int samohl = 0;
+            int souhl = 0;
+            int ostatni = 0;
+
+            foreach (char c in veta)
+            {
+                if (samohlasky.Contains(c))
+                    samohl++;
+                else if (souhlasky.Contains(c))
+                    souhl++;
+                else
+                    ostatni++;
+            }
+
+            Console.WriteLine($"Ve větě je {samohl} samohlásek, {souhl} souhlásek a {ostatni} nepísmenných znaků.");
+            Console.ReadKey();
+
+    
+            string text = "Já bych všechny ty internety zakázala.";
+
+            string vystup = text.Insert(29, "ne").Remove(7, 8);
+            //vystup = vystup.Remove(7, 8);
+            Console.WriteLine(vystup);
+            Console.ReadKey();*/
+
+            /*
+            string text = "On je \"debil\"";
+            Console.WriteLine(text);
+
+            string abecedniZnaky = "abcdefghijklmnopqrstuvwxyz";
+            string[] morseovyZnaky = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
+
+            string vstup = ".. - -. . - .-- --- .-. -.-";
+
+            string[] pismena = vstup.Split(' ');
+            string vystup = "";
+
+            foreach (string pismeno in pismena)
+            {
+                int index = Array.IndexOf(morseovyZnaky, pismeno);
+                if (index == -1)
+                    vystup += "?";
+                else
+                    vystup += abecedniZnaky[index];
+            }
+
+            Console.WriteLine(vystup);
+            Console.ReadKey();*/
+
+
+            Console.WriteLine("ax² + bx + c = 0");
+            Console.Write("a = ");
+            string sa = Console.ReadLine();
+            Console.Write("b = ");
+            string sb = Console.ReadLine();
+            Console.Write("c = ");
+            string sc = Console.ReadLine();
+
+            double a = double.Parse(sa);
+            double b = double.Parse(sb);
+            double c = double.Parse(sc);
+
+            double D = b * b - (4 * a * c);
+
+            if (D < 0)
+                Console.WriteLine("Kořen kvadrativké rovnice je prázdná množina.");
+            else if (D == 0)
+            {
+                double x = -b / (2 * a);
+                Console.WriteLine("Kvadratická rovnice má jeden dvojnásobný kořen K = { " + x + " }");
+            }
+            else
+            {
+                double x1 = (-b + Math.Sqrt(D)) / (2 * a);
+                double x2 = (-b - Math.Sqrt(D)) / (2 * a);
+
+                Console.WriteLine("Kvadratická rovnice má kořeny: K = { " + Math.Min(x1, x2) + "; " + Math.Max(x1, x2) + " }");
+            }
+
+            Console.ReadKey();
+        }
