@@ -1,6 +1,6 @@
 ﻿namespace Euro
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Vyžaduje se proměnná návrháře.
@@ -98,11 +98,11 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "EUR";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(183, 130);
+            this.ClientSize = new System.Drawing.Size(288, 183);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Count);
@@ -110,8 +110,8 @@
             this.Controls.Add(this.CZK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Euro";
             ((System.ComponentModel.ISupportInitialize)(this.CZK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EUR)).EndInit();
             this.ResumeLayout(false);

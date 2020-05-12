@@ -9,14 +9,14 @@ namespace Euro
     static class Program
     {
         /// <summary>
-        /// Hlavní vstupní bod aplikace.
+        /// Hlavní vstupní bod aplikace. asdfasdf
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
